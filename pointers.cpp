@@ -9,6 +9,7 @@ int main(){
     cout<<b; //Gives  output of the address of a.
 
     //to get the value  stored in b:
-    cout<,"The value stored in b"<<*b;
+    int** c =&b;
+    cout<<"The value stored in b"<<*c;
     return 0;
 }

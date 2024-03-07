@@ -8,12 +8,14 @@ int main(){
     scienceMarks [2] = 13;
     scienceMarks [3] = 14;
 int englishMarks[4] = {99,88,77,66};
+
 //Printing the array using for loop
 cout<<"Printing using for loop"<<endl;
 for (int i =0;i<4;i++)
 {
     cout<<mathMarks[i]<<endl;
 }
+
 //printing the array using while loop
 cout<<"Printing using while loop"<<endl;
 int j=0;
@@ -22,6 +24,7 @@ while (j<4)
     cout<<scienceMarks[j]<<endl;
     j++;
 }
+
 //under do while loop, the loop will run at least once even if the condition is not matched.
 cout<<"Printing using do while loop"<<endl;
 int k =0;
@@ -32,5 +35,11 @@ do
 } while (k<4);
 
 
+//pointers and arrays
+int * p = mathMarks;  // declaring a pointer variable addressing our firsr array.
+cout<<"The value of *p is:"<<*p<<endl;
+cout<<"The value of *p is:"<<*(p+1)<<endl;
+cout<<"The value of *p is:"<<*(p+2)<<endl;
+cout<<"The value of *p is:"<<*(p+3)<<endl;
     return 0;
 }

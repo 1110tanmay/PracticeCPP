@@ -7,5 +7,8 @@ int main(){
     // * = Dereference operator
     //Every variable is stored in the ram. We are calling the address the through the & and *.
     cout<<b; //Gives  output of the address of a.
+
+    //to get the value  stored in b:
+    cout<,"The value stored in b"<<*b;
     return 0;
 }
